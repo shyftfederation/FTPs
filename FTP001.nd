@@ -1,0 +1,26 @@
+# Abstract
+The Shyft Network is governed by a Federation and a Constitution, the adoption of which (when signed by all members of the Federation) resulted in the creation of the Network. As a result, only the Federation has the capacity to add or remove Members, per the Constitution.
+Currently, the technical process of adding a new Federation member is assigned to an Admin key.
+In order for this process to work in the manner prescribed in the Constitution, an upgrade needs to be made to enable the individual Members of the Federation to mechanically **vote via a smart contract to add or remove Members of the Federation**. This would align the technical governance function of the Network by nesting the technological capabilities of the system to be the same as those delineated in the Constitution, as opposed to relying on the centralized administrator to perform this technical function as instructed by the Federation and its Members. 
+The outcome of **FTP 001** would result in the technological capacity of the Network to support Constitutional functions related to governance, with the most particular being: Federation Members voting with their delegate keys on actions related to the addition of potential Members or the removal of existing Members.
+
+# Motivation
+FTP 001 will improve the distribution of the Network by improving the governance structure of the Network. 
+
+# Implementation
+For FTP 001, inclusion of the two authorities related to adding & removing members as a technical process instead of the Administrative one we have now.
+Per the Authorities conferred to The Federation in the Constitution, Members may add or remove Validators keys only on the basis of a vote of the Members based on the majority threshold specified below:
+
+ - A vote for the addition of a Validator requires a ⅔ majority of current Members plus 1.
+ - A vote for the removal of a Validator requires a ⅔ majority of current Members plus 2. 
+
+FTP 001 will implement these governance functions into the Admin contract.
+
+# Next Steps
+Upon approval by the Members of the Federation:
+
+ 1. necessary code changes will be proposed,
+ 2. proposed code changes will be tested on a testnet,
+ 3. [*if required, the proposed code changes will be audited by a third-party auditor*],
+ 4. [*if modified as a result of the audit, the updated proposed code changes will be tested on a testnet*],
+ 5. proposed code changes will be deployed on the Shyft Mainnet
